@@ -1,1 +1,1 @@
-[{"title":"Bianca","price":14,"thumbnail":"random","id":1}]
+[{"title":"Bianca","price":14,"thumbnail":"random","id":1}, {"title":"Pia","price":15,"thumbnail":"random2","id":3}, {"title":"Cris","price":16,"thumbnail":"random3","id":3}, {"title":"Javi","price":17,"thumbnail":"random4","id":4}]
