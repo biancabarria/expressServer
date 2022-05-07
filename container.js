@@ -69,11 +69,5 @@ class Contenedor {
     }
 }
 
-const obtenerProductos = async () => {
-    const productos = new Contenedor('products.txt')
-    const contenido = await productos.getAll()
-    console.log('Total de Productos:', contenido)
-}
-
-obtenerProductos()
+module.exports = Contenedor
 
