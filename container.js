@@ -37,6 +37,16 @@ class Contenedor {
         }
     }
 
+    async getRandom() {
+        try {
+            const contenidoCrudo = await fs.promises.readFile(this.nombreArchivo)
+            const contenido = JSON.parse(contenidoCrudo)
+            return contenido[Math.floor(Math.random()*contenido.length)]
+        } catch (error) {
+            return []
+        }
+    }
+
     async getById(id) {
         try {
             const contenidoCrudo = await fs.promises.readFile(this.nombreArchivo)

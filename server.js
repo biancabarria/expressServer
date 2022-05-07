@@ -12,6 +12,16 @@ app.get('/productos', (req, res) => {
     obtenerProductos()
 })
 
+app.get('/productoRandom', (req, res) => {
+    const obtenerProducto = async () => {
+        const productos = new Contenedor('products.txt')
+        const contenido = await productos.getRandom()
+        console.log(contenido)
+        res.send(contenido)
+    }
+    obtenerProducto()
+})
+
 app.listen(8080, () => {
     console.log('Servidor levantado!')
 })
